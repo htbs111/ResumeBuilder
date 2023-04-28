@@ -36,7 +36,7 @@
 }
 
 \pagestyle{empty} % Suppress page numbers
-\definecolor{myblue}{RGB}{64,147,207}
+\definecolor{myblue}{RGB}{18,121,199}
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
 %----------------------------------------------------------------------------------------
@@ -106,7 +106,7 @@
   \sectionskip
   \MakeUppercase{{\bf #1}} % Section title
   \sectionlineskip
-  \textcolor{myblue}{\hrule} % Horizontal line
+  \textcolor{myblue}{\hrule height 1.5pt} % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0em} % Margin within the section
   }
