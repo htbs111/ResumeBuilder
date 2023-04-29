@@ -1,0 +1,108 @@
+extends layout
+
+block header
+  section.info
+    .info-item.name= info.name
+    .info-item.sub-text
+      span.sub-item
+
+        span.title= "phone: "
+        span.phone= info.phone
+      span.sub-item
+
+        span.title= "email: "
+        span.email
+          a(href="mailto:" + info.email)= info.email
+
+  section.section-item.education
+    .section-header
+      .section-title= "EDUCATION"
+      .section-headerline
+    .section-content
+      each edu in education
+        .section-subitem
+          .section-subitem-header
+            span.school-name= edu.school
+            if edu.adress 
+              span.school-adress= "," + edu.adress
+            
+            span.range.sub-text= edu.startTime + "-" + edu.endTime
+          .section-subitem-subheader.sub-text= edu.education + " of " + edu.major
+
+block content
+  section.section-item.personal-projects
+    .section-header
+      .section-title= "PUBLICATION"
+      .section-headerline
+    .section-content
+      ul.section-subitem
+        each project in personalProjects
+          .section-subitem-header
+              li.detail.sub-text
+                span.content= project.allAuthor + project.details
+                span.status= project.status
+
+  section.section-item.researchExperiences
+    .section-header
+      .section-title= "RESEARCH EXPERIENCES"
+      .section-headerline
+    .section-content
+      each experience in researchExperiences
+        .section-subitem
+          .section-subitem-header
+            span.company-name= experience.company
+            span.range.sub-text= experience.range
+          .section-subitem-subheader.sub-text= experience.position
+          //- .techs-container
+            each tech in experience.techs
+                span.tech= tech
+          each project in experience.projects
+            .project-section
+              .project-name= project.name
+              ul.project-detail
+                each detail in project.details
+                  li.detail= detail
+  section.section-item.workExperiences
+    .section-header
+      .section-title= "WORK EXPERIENCE"
+      .section-headerline
+    .section-content
+      each experience in workExperiences
+        .section-subitem
+          .section-subitem-header
+            span.company-name= experience.company
+            span.range.sub-text= experience.range
+          .section-subitem-subheader.sub-text= experience.position
+          //- .techs-container
+            each tech in experience.techs
+                span.tech= tech
+          each project in experience.projects
+            .project-section
+              .project-name= project.name
+              ul.project-detail
+                each detail in project.details
+                  li.detail= detail
+  
+
+
+
+  section.section-item.awards
+    .section-header
+      .section-title= "AWARDS AND HONORS "
+      .section-headerline
+    .section-content
+      ul.awards-section
+        each award in others.awards
+          li.award.sub-text= award
+
+  section.section-item.skills
+    .section-header
+      .section-title= "SKILL"
+      .section-headerline
+    .section-content
+      ul.skill-section
+        each val, key in others.skills
+              li.skill.sub-text
+                  span.skill-bold= key + ': '
+                  span.skill-text= val
+

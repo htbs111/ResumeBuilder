@@ -1,0 +1,337 @@
+@mixin page-margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+// .techs-container {
+//   margin: 10px 0;
+// }
+
+// .tech {
+//   display: inline-block;
+//   min-width: 20px;
+//   height: 20px;
+//   line-height: 18px;
+//   padding: 0 7px;
+//   border: 1px solid #495057;
+//   border-radius: 10px;
+//   margin-right: 10px;
+//   font-size: 12px;
+//   color: #495057;
+//   background-color: transparent;
+// }
+
+.section-headerline {
+  flex: 1;
+  height: 1.2pt;
+  background-color: #1279c7;
+  opacity: 0.9;
+}
+
+section.info {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  // text-align: right;
+
+  .info-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-size: 16pt;
+    color: rgb(0, 112, 192);
+    font-weight: bold;
+  }
+  
+
+  .status {
+    height: 20px;
+    line-height: 14px;
+    padding: 3px 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    background: #212529;
+  }
+
+  .sub-text {
+    font-size: 14pt;
+    display:table;
+    .title {
+      font-weight: bold;
+      text-align: center;
+      display: table-cell;
+    }
+    .email{
+      display: table-cell;
+      vertical-align: middle;
+
+    }
+  }
+
+  .location, .sub-item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .fas {
+    margin-right: 5px;
+  }
+
+  .fas, .phone, .email {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .languages {
+    .language {
+      font-family: OpenSans Light;
+      display: inline-block;
+      min-width: 20px;
+      height: 20px;
+      line-height: 20px;
+      padding: 0 7px;
+      border-radius: 10px;
+      margin: 0 5px;
+      font-size: 12px;
+      color: #fff;
+      background: #212529;
+    }
+  }
+}
+
+.section-item {
+  margin: 10px 0;
+}
+
+section.researchExperiences {
+  .section-header {
+
+    margin: 5px 0;
+  }
+
+  .section-title {
+    font-size: 14pt;
+    // padding: 2pt 0;
+  }
+
+  // .section-headerline {
+  //   flex: 1;
+  //   height: 1px;
+  //   background-color: #4093cf;
+  // }
+
+  .section-content {
+    .section-subitem-header {
+      display: flex;
+      align-items: center;
+
+      .company-name {
+        flex: 1;
+        font-size: 10pt;
+        font-weight: bold;
+        line-height: 12pt;
+        color: #212529;
+        padding: 2pt 0;
+      }
+    }
+
+    .sub-text {
+      font-size: 10pt;
+      color: #212529;
+    }
+
+    .project-section {
+      margin: 6pt 0;
+
+      .project-name {
+        font-size: 10pt;
+        color: #212529;
+        font-weight: bold;
+      }
+
+      .project-detail {
+        margin: 6px 0 0 18px;
+        font-size: 14px;
+        color: #212529;
+
+        .detail {
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+section.workExperiences {
+  .section-header {
+
+    margin: 5px 0;
+  }
+
+  .section-title {
+    font-size: 14pt;
+    // padding: 2pt 0;
+  }
+
+  // .section-headerline {
+  //   flex: 1;
+  //   height: 1px;
+  //   background-color: #4093cf;
+  // }
+
+  .section-content {
+    .section-subitem-header {
+      display: flex;
+      align-items: center;
+
+      .company-name {
+        flex: 1;
+        font-size: 10pt;
+        font-weight: bold;
+        line-height: 12pt;
+        color: #212529;
+        padding: 2pt 0;
+      }
+    }
+
+    .sub-text {
+      font-size: 10pt;
+      color: #212529;
+    }
+
+    .project-section {
+      margin: 6pt 0;
+
+      .project-name {
+        font-size: 10pt;
+        color: #212529;
+        font-weight: bold;
+      }
+
+      .project-detail {
+        margin: 6px 0 0 18px;
+        font-size: 14px;
+        color: #212529;
+
+        .detail {
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+}
+// publication
+section.personal-projects {
+  .section-header {
+
+    margin: 5px 0;
+  }
+
+  .section-title {
+    font-size: 14pt;
+    // padding: 2pt 0;
+  }
+
+  .section-subitem {
+    margin-left: 13pt;
+    .sub-text{
+      font-size: 10pt;
+    }
+  }
+}
+
+section.education {
+  .section-header {
+
+    margin: 5px 0;
+  }
+
+  .section-title {
+    font-size: 14pt;
+    // padding: 2pt 0;
+  }
+
+  // .section-headerline {
+  //   flex: 1;
+  //   height: 1.2pt;
+  //   background-color: #1279c7;
+  //   opacity: 0.9;
+  // }
+
+  .section-subitem-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .school-name {
+    font-weight: bold;
+    font-size: 10pt;
+    line-height: 12pt;
+    color: #212529; 
+    padding: 4pt 0;
+    order: 1;
+  }
+  .school-adress{
+    text-align: left;
+    order: 2;
+    flex-grow: 1;
+  }
+
+  .range.sub-text {
+    font-size: 10pt;
+    color: #212529;
+    padding: 2pt 0;
+    order: 3;
+    flex-grow: 1;
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .section-subitem-subheader.sub-text {
+    font-size: 10pt;
+    color: #212529;
+  }
+}
+
+
+
+section.awards {
+  .section-header {
+
+    margin: 5px 0;
+  }
+
+  .section-title {
+    font-size: 14pt;
+    // padding: 2pt 0;
+  }
+  .awards-section{
+    margin-left: 13pt;
+    .sub-text{
+      font-size: 10pt;
+    }
+  }
+  
+}
+section.skills {
+  .section-header {
+
+    margin: 5px 0;
+  }
+
+  .section-title {
+    font-size: 12pt;
+  }
+  .skill-section{
+    margin-left: 13pt;
+    .sub-text{
+      font-size: 10pt;
+    }
+  }
+}
+
+

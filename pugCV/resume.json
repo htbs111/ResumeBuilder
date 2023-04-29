@@ -1,0 +1,163 @@
+{
+  "title": "resume-generator",
+  "info": {
+    "name": "Jingjing WANG",
+    "phone": "182****0512",
+    "email": "yourname@gmail.com"
+  },
+  "workExperiences": [
+    {
+      "company": "Haomo.ai",
+      "range": "2022.02-2022.05",
+      "position": "Internship",
+      "projects": [
+        {
+          "name": "Large-Scale Mapping & Multi-Area Map Concact",
+          "url": "",
+          "details": [
+            "Utilized IESKF as the slam front-end to reconstruct a major (5km*5km) point-cloud map.",
+            "Utilized ISAM2 as the factor graph model of slam back-end optimization."
+          ]
+        },
+        {
+          "name": "Automatic Vectorization of Lane Lines",
+          "url": "",
+          "details": [
+            "Designed and built a portable data collection device for mapping by using Livox solid-state LiDAR, Hesai 32-line LiDAR, IMU and GNSS.",
+            "Reconstructed point-cloud maps with clear intensity reflective lane lines and no overlapping points using FASTLIO-SAM, and integrated loop closure and GPS prior factor into the optimization process of the factor graph.",
+            "Extracted point-cloud 3D line features and image 2D line features, based on PnP(Perspective-n-Point) to estimate camera and LiDAR extrinsic.",
+            "Based on the Mask2Former network, performed semantic segmentation on the image data and extracted 3D lane line point-cloud through the camera and LiDAR extrinsic.",
+            "Clustered the semantic point-cloud of lane lines and fitted a polynomial to the point-cloud."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Tencent, Robotics X ",
+      "range": "2022.03-2022.11",
+      "position": "Internship",
+      "projects": [
+        {
+          "name": "Wheeled Bipedal Robot Ollie Ball Balancing Control System",
+          "details": [
+            "Adapted the whole body dynamic control (WBC) algorithm to achieve self-balancing and high manoeuvrability of the robot based on the structural features of the castors and linkages of the underdriven wheeled bipedal robot.",
+            "Utilized feedback signals from our self-developed tactile sensors. ",
+            "Utilized whole-body dynamic control, the robot solves a hierarchical QP problem with an optimization method and then achieves full-body posture adjustment by sending joint torques."
+          ]
+        },
+        {
+          "name": "Multi-sensor Fusion Localization Robot & Relocalization Initialize",
+          "url": "",
+          "details": [
+            "Added laser odometry factor, IMU pre-integration factor, prior map matching factor and GNSS prior factor to the factor graph model, and completed global graph optimization using Ceres to estimate the current real-time attitude.",
+            "Utilized Scancontext descriptor for 360-degree heading traversal matching, and ICP for acceptable registration, to initialize the Relocalization pose.",
+            "Completed EVO trajectory alignment tests on the KITTI public dataset with an RMSE of 0.5m and a 90% repositioning success rate, eight times more efficient than ICP and NDT matching methods."
+          ]
+        }
+      ]
+    }
+  ],
+  "researchExperiences": [
+    {
+      "company": "公司名称",
+      "range": "Nov 2020–Dec 2020",
+      "position": "Risk Management Intern",
+      "projects": [
+        {
+          "name": "The Application of Derivative Securities in Hedging",
+          "url": "",
+          "details": [
+            "Assumed the total amount of gold hedged, the trading volume of each gold futures contract, and took the spot and futures prices as the starting price, calculated the required hedging contract based on the optimal hedging ratio",
+            "Discussed the possibility of 'perfect hedging' from such aspects as the range of futures price and spot price, the commodity grade of futures contract object and spot market hedging transaction, and futures varieties."
+          ]
+        },
+        {
+          "name": "Research on Fixed Income Securities ",
+          "url": "",
+          "details": [
+            "Calculated the Macaulay duration, modified duration and convexity measure of the bonds based on rational assumptions;",
+            "Selected bonds and reasonable required interest rate change amount according to the change of required yield;",
+            "Chose a pair of bonds to show the relationship between the bond price and the coupon rate, and the relationship between the maturity and the price under the given maturity date, coupon rate and the initial yield"
+          ]
+        },
+        {
+          "name": "Quantitative Analysis of the Relationship between Environmental Pollution and Major Economic Indicators in China",
+          "url": "",
+          "details": [
+            "Established the relationship between environmental pollution and another economic factor based on the unit regression model and the data on China's environmental pollution and major economic indicators from 2000 to 2019;",
+            " Computed the explained sum of squares, residual sum of squares, and F value and its significance, and told its policy implications."
+          ]
+        }
+      ]
+    }
+    
+  ],
+  "personalProjects": [
+    {
+      "details": "A Study on the Implementation Path of Civics in Career Education Courses in Applied Undergraduate Institutions. Employment and Security.",
+      "status": "Under Review",
+      "allAuthor": "Yanhua LIU, Jingjing FU, Xiaolin LIU, Chao LI, Aoming LIU, Xingyu KONG,",
+      "personal":"Jingjing WANG"
+    }
+  ],
+  "education": [
+    {
+      "school": "Nanyang Technological University (NTU)",
+      "major": "Science",
+      "education": "Master",
+      "startTime": "Jul 2018",
+      "endTime": "Aug 2019",
+      "adress": "Singapore"
+    },
+    {
+      "school": "Fujian Normal University",
+      "major": "Bachelor",
+      "education": "Economics",
+      "startTime": "Apr 2019",
+      "endTime": "Jun 2019",
+      "adress": "Fuzhou, China" 
+    }
+  ],
+  "others": {
+    "supplements": [
+      "这是一段描述这是一段描述这是一段描述这是一段描述",
+      "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
+      "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述",
+      "这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述"
+    ],
+    "socialLinks": [
+      {
+        "name": "blog",
+        "icon": "fas fa-globe-americas",
+        "url": "https://somelink",
+        "text": "个人博客"
+      },
+      {
+        "name": "github",
+        "icon": "fab fa-github",
+        "url": "https://somelink",
+        "text": "Github"
+      }
+    ],
+    "awards": [
+      "First-class Scholarship for Academic Excellence awarded by Wuyi University (2021,2022,2023)",
+      "First Prize in Guangdong-Hong Kong-Macao Greater Bay Area IT Application System Development Competition (2022)",
+      "Second Prize in the China Postgraduate Electronics Design Competition South China Division (2022)",
+      "Second Prize in the RoboMaster Robotics Competition (2018,2019)"
+    ],
+    "skills": 
+      {
+        "Programming": "Python, C/C++, MATLAB, ROS, Javascript.",
+        "Embedded": "Linux, RTOS, STM32, Arduino, Rasberry Pi, Rk3399, Esp82666.",
+        "Technologies": "Kalman Filter, Factor Graph, Nonlinear optimization, Gazebo, PID, point-cloud processing, Multi-sensor extrinsic calibration.",
+        "Tools": "OpenCV, Cuda, GTSAM, Ceres, g2o, Sophus, PCL, Git.",
+        "Languages": "Chinese (native), English (fluent)."
+      }
+    ,
+    "EXTRAACTIVITIES": [
+      "Volunteered a total of 160 hours during my undergraduate and postgraduate studies in Jiangmen, including activities such as providing free education, visiting the elderly, promoting civilization, and other community services at Enping Middle School in Jiangmen.",
+      "Developed an open-source 3D slam project called FASTLIO-SAM (Github 0.2K), a framework for Robotics or Handle Collect, which has been compared with IESKF + ISAM2.",
+      "Slam & Robotics study notes: Sensor-fusion-for-localization-and-mapping(Github 0.5k) , CSDN blog(blog total post: 176). Shared personal slam learning records and included a variety of laser slam algorithms, inertial navigation principles, based on optimization and filtering methods."
+    ]
+  }
+}

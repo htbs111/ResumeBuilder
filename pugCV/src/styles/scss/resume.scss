@@ -1,0 +1,102 @@
+@import "_include-media.scss";
+@import "./content.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  src: url("../fonts/PingFang-SC-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans Light";
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+
+html, body {
+  font-family: "Times New Roman";
+  background: #f7f8f9;
+  // -webkit-font-smoothing: antialiased; 
+
+  @include media("print") {
+    background-color: #ffffff;
+  }
+
+  @include page-margin(2cm, 3cm, 2cm, 3cm);
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.container {
+  margin: 50px auto;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .1);
+  background: #fff;
+
+  @include media(">=desktop") {
+    width: 800px;
+    padding: 30px 40px;
+  }
+
+  @include media(">=tablet", "<=desktop") {
+    width: 750px;
+  }
+
+  @include media("<=phone") {
+    margin: 0;
+    padding: 5px 0;
+    box-shadow: 0 0 0;
+  }
+
+  @include media("print") {
+    margin: 0;
+    box-shadow: 0 0 0;
+
+    div {
+      break-after: always;
+    }
+  }
+}
+
+.container,
+.container * {
+  visibility: visible;
+}
+
+/* 打印时的样式 */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .container,
+  .container * {
+    visibility: visible;
+  }
+  .container {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+::-webkit-scrollbar, :hover::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+}
+ul li::marker {
+  font-size: 8pt;
+}
