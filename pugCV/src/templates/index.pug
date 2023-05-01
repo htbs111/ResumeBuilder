@@ -22,10 +22,12 @@ block header
       each edu in education
         .section-subitem
           .section-subitem-header
-            span.school-name= edu.school
-            if edu.adress 
-              span.school-adress= "," + edu.adress
             
+            if edu.adress
+              span.school-name= edu.school + "," 
+              span.school-adress= edu.adress
+            else 
+              span.school-name= edu.school 
             span.range.sub-text= edu.startTime + "-" + edu.endTime
           .section-subitem-subheader.sub-text= edu.education + " of " + edu.major
 
@@ -53,9 +55,7 @@ block content
             span.company-name= experience.company
             span.range.sub-text= experience.range
           .section-subitem-subheader.sub-text= experience.position
-          //- .techs-container
-            each tech in experience.techs
-                span.tech= tech
+
           each project in experience.projects
             .project-section
               .project-name= project.name
@@ -73,9 +73,7 @@ block content
             span.company-name= experience.company
             span.range.sub-text= experience.range
           .section-subitem-subheader.sub-text= experience.position
-          //- .techs-container
-            each tech in experience.techs
-                span.tech= tech
+
           each project in experience.projects
             .project-section
               .project-name= project.name

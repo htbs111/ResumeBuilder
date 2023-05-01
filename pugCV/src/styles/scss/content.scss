@@ -5,30 +5,11 @@
   margin-left: $left;
 }
 
-// .techs-container {
-//   margin: 10px 0;
-// }
 
-// .tech {
-//   display: inline-block;
-//   min-width: 20px;
-//   height: 20px;
-//   line-height: 18px;
-//   padding: 0 7px;
-//   border: 1px solid #495057;
-//   border-radius: 10px;
-//   margin-right: 10px;
-//   font-size: 12px;
-//   color: #495057;
-//   background-color: transparent;
+// .section-headerline {
+//   border-top: 1.6px #1279c7 solid;
+//   opacity: 0.9;
 // }
-
-.section-headerline {
-  flex: 1;
-  height: 1.2pt;
-  background-color: #1279c7;
-  opacity: 0.9;
-}
 
 section.info {
   display: flex;
@@ -41,7 +22,7 @@ section.info {
   }
 
   .name {
-    font-size: 16pt;
+    font-size: 16px;
     color: rgb(0, 112, 192);
     font-weight: bold;
   }
@@ -49,7 +30,7 @@ section.info {
 
   .status {
     height: 20px;
-    line-height: 14px;
+    line-height: 10px;
     padding: 3px 5px;
     border-radius: 10px;
     font-size: 12px;
@@ -58,7 +39,7 @@ section.info {
   }
 
   .sub-text {
-    font-size: 14pt;
+    font-size: 10px;
     display:table;
     .title {
       font-weight: bold;
@@ -104,18 +85,22 @@ section.info {
 
 .section-item {
   margin: 10px 0;
+  
+}
+.section-header {
+
+  margin: 5px 0;
+  border-bottom: 1.6px #1279c7 solid;
+}
+
+.section-title {
+  font-size: 10px;
+  padding-bottom: 4px;
+
 }
 
 section.researchExperiences {
-  .section-header {
-
-    margin: 5px 0;
-  }
-
-  .section-title {
-    font-size: 14pt;
-    // padding: 2pt 0;
-  }
+  
 
   // .section-headerline {
   //   flex: 1;
@@ -130,31 +115,31 @@ section.researchExperiences {
 
       .company-name {
         flex: 1;
-        font-size: 10pt;
+        font-size: 10px;
         font-weight: bold;
-        line-height: 12pt;
+        line-height: 12px;
         color: #212529;
-        padding: 2pt 0;
+        padding: 2px 0;
       }
     }
 
     .sub-text {
-      font-size: 10pt;
+      font-size: 10px;
       color: #212529;
     }
 
     .project-section {
-      margin: 6pt 0;
+      margin: 6px 0;
 
       .project-name {
-        font-size: 10pt;
+        font-size: 10px;
         color: #212529;
         font-weight: bold;
       }
 
       .project-detail {
         margin: 6px 0 0 18px;
-        font-size: 14px;
+        font-size: 10px;
         color: #212529;
 
         .detail {
@@ -166,15 +151,7 @@ section.researchExperiences {
 }
 
 section.workExperiences {
-  .section-header {
 
-    margin: 5px 0;
-  }
-
-  .section-title {
-    font-size: 14pt;
-    // padding: 2pt 0;
-  }
 
   // .section-headerline {
   //   flex: 1;
@@ -189,31 +166,31 @@ section.workExperiences {
 
       .company-name {
         flex: 1;
-        font-size: 10pt;
+        font-size: 10px;
         font-weight: bold;
-        line-height: 12pt;
+        line-height: 12px;
         color: #212529;
-        padding: 2pt 0;
+        padding: 2px 0;
       }
     }
 
     .sub-text {
-      font-size: 10pt;
+      font-size: 10px;
       color: #212529;
     }
 
     .project-section {
-      margin: 6pt 0;
+      margin: 6px 0;
 
       .project-name {
-        font-size: 10pt;
+        font-size: 10px;
         color: #212529;
         font-weight: bold;
       }
 
       .project-detail {
         margin: 6px 0 0 18px;
-        font-size: 14px;
+        font-size: 10px;
         color: #212529;
 
         .detail {
@@ -225,42 +202,17 @@ section.workExperiences {
 }
 // publication
 section.personal-projects {
-  .section-header {
-
-    margin: 5px 0;
-  }
-
-  .section-title {
-    font-size: 14pt;
-    // padding: 2pt 0;
-  }
 
   .section-subitem {
-    margin-left: 13pt;
+    margin-left: 13px;
     .sub-text{
-      font-size: 10pt;
+      font-size: 10px;
     }
   }
 }
 
 section.education {
-  .section-header {
-
-    margin: 5px 0;
-  }
-
-  .section-title {
-    font-size: 14pt;
-    // padding: 2pt 0;
-  }
-
-  // .section-headerline {
-  //   flex: 1;
-  //   height: 1.2pt;
-  //   background-color: #1279c7;
-  //   opacity: 0.9;
-  // }
-
+  
   .section-subitem-header {
     display: flex;
     align-items: center;
@@ -269,22 +221,24 @@ section.education {
 
   .school-name {
     font-weight: bold;
-    font-size: 10pt;
-    line-height: 12pt;
+    font-size: 10px;
+    line-height: 12px;
     color: #212529; 
-    padding: 4pt 0;
+    padding: 4px 0;
     order: 1;
   }
   .school-adress{
     text-align: left;
+    font-size: 10px;
     order: 2;
     flex-grow: 1;
+    padding-left: 0.5em;
   }
 
   .range.sub-text {
-    font-size: 10pt;
+    font-size: 10px;
     color: #212529;
-    padding: 2pt 0;
+    padding: 2px 0;
     order: 3;
     flex-grow: 1;
     align-self: flex-end;
@@ -292,44 +246,28 @@ section.education {
   }
 
   .section-subitem-subheader.sub-text {
-    font-size: 10pt;
+    font-size: 10px;
     color: #212529;
+    margin-bottom: 6px;
   }
 }
 
 
 
 section.awards {
-  .section-header {
-
-    margin: 5px 0;
-  }
-
-  .section-title {
-    font-size: 14pt;
-    // padding: 2pt 0;
-  }
   .awards-section{
-    margin-left: 13pt;
+    margin-left: 13px;
     .sub-text{
-      font-size: 10pt;
+      font-size: 10px;
     }
   }
   
 }
 section.skills {
-  .section-header {
-
-    margin: 5px 0;
-  }
-
-  .section-title {
-    font-size: 12pt;
-  }
   .skill-section{
-    margin-left: 13pt;
+    margin-left: 13px;
     .sub-text{
-      font-size: 10pt;
+      font-size: 10px;
     }
   }
 }
